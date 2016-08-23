@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import static java.lang.Math.*;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -18,7 +19,7 @@ public class CircleTest {
     @Test
     public void shouldReturnAValueOf9PiWhenGetAreaIsCalledWithARadiusOf3() {
         circle = new Circle(3);
-        assertThat(circle.getArea(),is(Math.PI*9));
+        assertThat(circle.getArea(),is(PI*9));
     }
 
     @Test
@@ -31,7 +32,7 @@ public class CircleTest {
 
     @Test
     public void shouldReturnAValueOf6PiWhenGetPerimeterIsCalledWith3() {
-
-
+        circle=new Circle(3);
+        assertThat(circle.getPerimeter(), is(6* PI));
     }
 }

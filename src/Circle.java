@@ -1,3 +1,5 @@
+import static java.lang.Math.*;
+
 public class Circle {
     private int radius;
 
@@ -6,10 +8,10 @@ public class Circle {
     }
 
     public double getArea() {
-        return Math.pow(radius, 2)*Math.PI;
+        return pow(radius, 2)* PI;
     }
 
     public double getPerimeter() {
-        return 0;
+        return 2*radius*PI;
     }
 }
